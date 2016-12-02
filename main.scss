@@ -1,8 +1,41 @@
+// --------------------------------------------------
+// +++ IGLOO +++
+// --------------------------------------------------
+
 /**
  * igloocss, by @yourownmood
  *
  * github.com/yourownmood | yourownmood.nl
  */
 
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Igloo config.......Project-level configuration.
+ * Igloo global.......Project-wide vars and settings.
+ *
+ * TOOLS
+ * Sass MQ............Default media query manager.
+ */
+
+
+// SETTINGS
+@import "settings/igloo.settings.config";
+@import "settings/igloo.settings.global";
+
+
 // TOOLS
 @import "node_modules/sass-mq/mq";
+
+
+// GENERIC
+
+
+// ELEMENTS
+
+
+// OBJECTS
+
+
+// UTILITIES
