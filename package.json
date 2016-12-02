@@ -1,0 +1,30 @@
+{
+  "name": "igloocss",
+  "version": "0.0.1",
+  "description": "Extensible, scalable, Sass-based, OOCS framework which houses inuit.css",
+  "main": "main.scss",
+  "scripts": {
+    "lint": "./node_modules/.bin/stylelint \"**/*.scss\" --syntax scss",
+    "pre-push": "npm test",
+    "test": "npm run lint"
+  },
+  "keywords": [
+    "oocss",
+    "sass",
+    "bem",
+    "css",
+    "itcss"
+  ],
+  "pre-push": {
+    "silent": false
+  },
+  "author": "Steven Bax (yourownmood)",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^3.13.0",
+    "pre-push": "^0.1.1",
+    "sass-mq": "^3.3.1",
+    "stylelint": "^7.6.0",
+    "stylelint-scss": "^1.3.4"
+  }
+}
