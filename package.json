@@ -6,6 +6,7 @@
   "scripts": {
     "lint": "./node_modules/.bin/stylelint \"**/*.scss\" --syntax scss",
     "pre-push": "npm test",
+    "styleguide": "./node_modules/.bin/aigis run -c ./aigis_config.yml",
     "test": "npm run lint"
   },
   "keywords": [
@@ -21,6 +22,7 @@
   "author": "Steven Bax (yourownmood)",
   "license": "ISC",
   "devDependencies": {
+    "node-aigis": "^1.2.1",
     "node-sass": "^3.13.0",
     "pre-push": "^0.1.1",
     "sass-mq": "^3.3.1",
