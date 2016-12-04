@@ -1,16 +1,17 @@
 // --------------------------------------------------
-// +++ IGLOO SETTINGS CONFIG +++
+// +++ SETTINGS CORE DOCS +++
 // --------------------------------------------------
 
 // === VARIABLES ===
 // --------------------------------------------------
 
-// GLOBAL CONFIG SETTINGS (MAP)
+// FONT-SIZE
+// LINE-HEIGHT
 
-// === FUNCTIONS ===
+// === IMPORT ===
 // --------------------------------------------------
 
-// CONFIG FUNCTION
+// INUITCSS SETTIGNS CORE
 
 // === DOCS ===
 // --------------------------------------------------
@@ -25,44 +26,43 @@
 // === VARIABLES ===
 // --------------------------------------------------
 
-// GLOBAL CONFIG SETTINGS (MAP)
+// FONT-SIZE
 
-$inuit-config: (
-  env: dev,
-  healthcheck: false,
-  debug: true,
-);
+$inuit-global-font-size: 16px;
 
-// === FUNCTIONS ===
+// LINE-HEIGHT
+
+$inuit-global-line-height: 24px;
+
+// === IMPORT ===
 // --------------------------------------------------
 
-// CONFIG FUNCTION
+// INUITCSS SETTIGNS CORE
 
-@function inuit-config($key) {
-  @return map-get($inuit-config, $key);
-}
+@import "node_modules/inuitcss/settings/settings.core";
 
 // === DOCS ===
 // --------------------------------------------------
 
 /*
 ---
-name: Config
+name: Core
 settings:
-  - Config
+  - Core
 ---
 
-A map of global config settings. Define any
-project-level configuration, feature switches,
-etc. in here.
+inuitcss’ core and setup settings.
 
-You can access data in this map using the following function:
-`inuit-config(<key>)`
+Base typographical styles an baseline grid.
+You need to define these values in pixels:
+inuitcss will convert them to more
+appropriate units.
 
-Example usage:
+Variables:
 
 ```scss
-@if (inuit-config(debug) == true) { ...  }
+$inuit-global-font-size: 16px;
+$inuit-global-line-height: 24px;
 ```
 
 */

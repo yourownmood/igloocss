@@ -1,12 +1,11 @@
 // --------------------------------------------------
-// +++ IGLOO SETTINGS GLOBAL +++
+// +++ TOOLS CLEARFIX +++
 // --------------------------------------------------
 
-// === VARIABLES ===
+// === IMPORT ===
 // --------------------------------------------------
 
-// GLOBAL RADIUS
-// GLOBAL TRANSITION
+// INUITCSS TOOLS CLEARFIX
 
 // === DOCS ===
 // --------------------------------------------------
@@ -18,36 +17,32 @@
 // --------------------------------------------------
 
 
-// === VARIABLES ===
+// === IMPORT ===
 // --------------------------------------------------
 
-// GLOBAL RADIUS
+// INUITCSS TOOLS CLEARFIX
 
-$global-radius: 3px !default;
-
-// GLOBAL TRANSITION
-
-$global-transition: (1/3) + s !default;
+@import "node_modules/inuitcss/tools/tools.clearfix";
 
 // === DOCS ===
 // --------------------------------------------------
 
 /*
 ---
-name: Global
-settings:
-  - Global
+name: Clearfix
+tools:
+  - Clearfix
 ---
 
-The global settings file contains any project-wide
-variables; things that need to be made available
-to the entire codebase.
+Mixin to drop micro clearfix into a selector. Further reading:
+http://www.cssmojo.com/the-very-latest-clearfix-reloaded/
 
-Variables:
+Usage example:
 
 ```scss
-$global-radius: 3px;
-$global-transition: (1/3) + s;
+.usage {
+  @include inuit-clearfix();
+}
 ```
 
 */

@@ -21,6 +21,7 @@ template_engine: hbs
 output_collection:
   - settings
   - tags
+  - tools
 
 component_dir: ./
 

@@ -1,12 +1,11 @@
 // --------------------------------------------------
-// +++ IGLOO SETTINGS GLOBAL +++
+// +++ TOOLS HIDDEN +++
 // --------------------------------------------------
 
-// === VARIABLES ===
+// === IMPORT ===
 // --------------------------------------------------
 
-// GLOBAL RADIUS
-// GLOBAL TRANSITION
+// INUITCSS TOOLS HIDDEN
 
 // === DOCS ===
 // --------------------------------------------------
@@ -18,36 +17,31 @@
 // --------------------------------------------------
 
 
-// === VARIABLES ===
+// === IMPORT ===
 // --------------------------------------------------
 
-// GLOBAL RADIUS
+// INUITCSS TOOLS HIDDEN
 
-$global-radius: 3px !default;
-
-// GLOBAL TRANSITION
-
-$global-transition: (1/3) + s !default;
+@import "node_modules/inuitcss/tools/tools.hidden";
 
 // === DOCS ===
 // --------------------------------------------------
 
 /*
 ---
-name: Global
-settings:
-  - Global
+name: Hidden
+tools:
+  - Hidden
 ---
 
-The global settings file contains any project-wide
-variables; things that need to be made available
-to the entire codebase.
+Mixin to quickly apply accessible hiding to elements.
 
-Variables:
+Usage example:
 
 ```scss
-$global-radius: 3px;
-$global-transition: (1/3) + s;
+.usage {
+  @include inuit-hidden-visually();
+}
 ```
 
 */

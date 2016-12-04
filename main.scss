@@ -12,21 +12,33 @@
  * CONTENTS
  *
  * SETTINGS
- * Igloo config.......Project-level configuration.
- * Igloo global.......Project-wide vars and settings.
+ * Config.......Igloo configuration.
+ * Core.........inuitcss’ core and setup settings.
+ * Global.......Igloo-wide vars and settings.
  *
  * TOOLS
- * Sass MQ............Default media query manager.
+ * Font-size....A mixin which guarantees baseline-friendly line-heights.
+ * Clearfix.....Micro clearfix mixin.
+ * Hidden.......Mixin for hiding elements.
+ * Sass MQ......Default media query manager.
+ * Aliases......Easier mixin aliases.
+ *
+ * GENERIC
  */
 
 
 // SETTINGS
 @import "settings/igloo.settings.config";
+@import "settings/settings.core.scss"; // (requires, inuitcss)
 @import "settings/igloo.settings.global";
 
 
 // TOOLS
-@import "node_modules/sass-mq/mq";
+@import "tools/tools.font-size"; // (requires, inuitcss)
+@import "tools/tools.clearfix"; // (requires, inuitcss)
+@import "tools/tools.hidden"; // (requires, inuitcss)
+@import "tools/tools.sass-mq"; // (requires, sass-mq)
+@import "tools/tools.aliases";
 
 
 // GENERIC
@@ -36,6 +48,9 @@
 
 
 // OBJECTS
+
+
+// COMPONENTS
 
 
 // UTILITIES

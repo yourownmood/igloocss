@@ -1,12 +1,11 @@
 // --------------------------------------------------
-// +++ IGLOO SETTINGS GLOBAL +++
+// +++ TOOLS FONT-SIZE +++
 // --------------------------------------------------
 
-// === VARIABLES ===
+// === IMPORT ===
 // --------------------------------------------------
 
-// GLOBAL RADIUS
-// GLOBAL TRANSITION
+// INUITCSS TOOLS FONT-SIZE
 
 // === DOCS ===
 // --------------------------------------------------
@@ -18,36 +17,37 @@
 // --------------------------------------------------
 
 
-// === VARIABLES ===
+// === IMPORT ===
 // --------------------------------------------------
 
-// GLOBAL RADIUS
+// INUITCSS TOOLS FONT-SIZE
 
-$global-radius: 3px !default;
-
-// GLOBAL TRANSITION
-
-$global-transition: (1/3) + s !default;
+@import "node_modules/inuitcss/tools/tools.font-size";
 
 // === DOCS ===
 // --------------------------------------------------
 
 /*
 ---
-name: Global
-settings:
-  - Global
+name: Font-size
+tools:
+  - Font-size
 ---
 
-The global settings file contains any project-wide
-variables; things that need to be made available
-to the entire codebase.
+Generate a font-size and baseline-compatible
+line-height.
 
-Variables:
+Usage example:
 
 ```scss
-$global-radius: 3px;
-$global-transition: (1/3) + s;
+.usage {
+  // Arguments:
+  // - Font-size
+  // - Override baseline line-height
+  // - Toggle important flag
+
+  @include inuit-font-size(21px, 30px, true);
+}
 ```
 
 */
