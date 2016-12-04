@@ -12,18 +12,22 @@
  * CONTENTS
  *
  * SETTINGS
- * Config.......Igloo configuration.
- * Core.........inuitcss’ core and setup settings.
- * Global.......Igloo-wide vars and settings.
+ * Config.........Igloo configuration.
+ * Core...........inuitcss’ core and setup settings.
+ * Global.........Igloo-wide vars and settings.
  *
  * TOOLS
- * Font-size....A mixin which guarantees baseline-friendly line-heights.
- * Clearfix.....Micro clearfix mixin.
- * Hidden.......Mixin for hiding elements.
- * Sass MQ......Default media query manager.
- * Aliases......Easier mixin aliases.
+ * Font-size......A mixin which guarantees baseline-friendly line-heights.
+ * Clearfix.......Micro clearfix mixin.
+ * Hidden.........Mixin for hiding elements.
+ * Sass MQ........Default media query manager.
+ * Aliases........Easier mixin aliases.
  *
  * GENERIC
+ * Box-sizing.....Better default `box-sizing`.
+ * Normalize.css..A level playing field using @necolas’ Normalize.css.
+ * Reset..........A tiny reset to complement Normalize.css.
+ *
  */
 
 
@@ -42,6 +46,9 @@
 
 
 // GENERIC
+@import "generic/generic.box-sizing"; // (requires, inuitcss)
+@import "generic/generic.normalize"; // (requires, inuitcss)
+@import "generic/generic.reset"; // (requires, inuitcss)
 
 
 // ELEMENTS

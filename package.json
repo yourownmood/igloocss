@@ -6,6 +6,7 @@
   "scripts": {
     "lint": "./node_modules/.bin/stylelint \"**/*.scss\" --syntax scss",
     "pre-push": "npm test",
+    "sass": "./node_modules/.bin/node-sass main.scss build/main.css",
     "styleguide": "./node_modules/.bin/aigis run -c ./aigis_config.yml",
     "test": "npm run lint"
   },
