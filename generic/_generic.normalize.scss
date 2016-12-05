@@ -1,12 +1,11 @@
 // --------------------------------------------------
-// +++ IGLOO SETTINGS GLOBAL +++
+// +++ GENERIC NORMALIZE +++
 // --------------------------------------------------
 
-// === VARIABLES ===
+// === IMPORT ===
 // --------------------------------------------------
 
-// GLOBAL RADIUS
-// GLOBAL TRANSITION
+// INUITCSS GENERIC NORMALIZE
 
 // === DOCS ===
 // --------------------------------------------------
@@ -18,36 +17,24 @@
 // --------------------------------------------------
 
 
-// === VARIABLES ===
+// === IMPORT ===
 // --------------------------------------------------
 
-// GLOBAL RADIUS
+// INUITCSS GENERIC NORMALIZE
 
-$global-radius: 3px !default;
-
-// GLOBAL TRANSITION
-
-$global-transition: (1/3) + s !default;
+@import "node_modules/inuitcss/generic/generic.normalize";
 
 // === DOCS ===
 // --------------------------------------------------
 
 /*
 ---
-name: Global
-settings:
-  - Global
+name: Normalize
+generic:
+  - Normalize
 ---
 
-The global settings file contains any project-wide
-variables; things that need to be made available
-to the entire codebase.
-
-Variables:
-
-```scss
-$global-radius: 3px;
-$global-transition: (1/3) + s;
-```
+A modern alternative to CSS resets:
+http://www.github.com/necolas/normalize.css
 
 */

@@ -1,0 +1,96 @@
+// --------------------------------------------------
+// +++ ELEMENTS HEADINGS +++
+// --------------------------------------------------
+
+// === VARIABLES ===
+// --------------------------------------------------
+
+// FONT-SIZE H1
+// FONT-SIZE H2
+// FONT-SIZE H3
+// FONT-SIZE H4
+// FONT-SIZE H5
+// FONT-SIZE H6
+
+// === IMPORT ===
+// --------------------------------------------------
+
+// INUITCSS ELEMENTS HEADINGS
+
+// === DOCS ===
+// --------------------------------------------------
+
+// DOCS
+
+// --------------------------------------------------
+// +++ END +++
+// --------------------------------------------------
+
+
+// === VARIABLES ===
+// --------------------------------------------------
+
+// FONT-SIZE H1
+
+$inuit-font-size-h1:  36px;
+
+// FONT-SIZE H2
+
+$inuit-font-size-h2:  28px;
+
+// FONT-SIZE H3
+
+$inuit-font-size-h3:  24px;
+
+// FONT-SIZE H4
+
+$inuit-font-size-h4:  20px;
+
+// FONT-SIZE H5
+
+$inuit-font-size-h5:  18px;
+
+// FONT-SIZE H6
+
+$inuit-font-size-h6:  16px;
+
+
+// === IMPORT ===
+// --------------------------------------------------
+
+// INUITCSS SETTIGNS CORE
+
+@import "node_modules/inuitcss/elements/elements.headings";
+
+// === DOCS ===
+// --------------------------------------------------
+
+/*
+---
+name: Headings
+elements:
+  - Headings
+---
+
+Simple default styles for headings 1 through 6. Anything more opinionated
+than simple font-size changes should likely be applied via classes (see:
+http://csswizardry.com/2016/02/managing-typography-on-large-apps/).
+
+
+We have all of our heading font sizes defined here. Passing these pixel
+values into our `inuit-font-size()` mixin will generate a rem-based
+`font-size` with a pixel fallback, as well as generating a `line-height` that
+will sit on our baseline grid.
+
+Variables:
+
+```scss
+$inuit-font-size-h1:  36px;
+$inuit-font-size-h2:  28px;
+$inuit-font-size-h3:  24px;
+$inuit-font-size-h4:  20px;
+$inuit-font-size-h5:  18px;
+$inuit-font-size-h6:  16px;
+```
+
+*/

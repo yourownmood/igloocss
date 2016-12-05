@@ -13,7 +13,6 @@
     "scss/at-function-pattern": "inuit-.+",
     "scss/at-mixin-pattern": "inuit-.+",
     "scss/dollar-variable-colon-space-before": "never",
-    "scss/partial-no-import": true,
     "scss/selector-no-redundant-nesting-selector": true,
     "at-rule-name-case": "lower",
     "at-rule-name-newline-after": "always-multi-line",

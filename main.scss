@@ -12,30 +12,80 @@
  * CONTENTS
  *
  * SETTINGS
- * Igloo config.......Project-level configuration.
- * Igloo global.......Project-wide vars and settings.
+ * Config.........Igloo configuration.
+ * Core...........inuitcss’ core and setup settings.
+ * Global.........Igloo-wide vars and settings.
  *
  * TOOLS
- * Sass MQ............Default media query manager.
+ * Font-size......A mixin which guarantees baseline-friendly line-heights.
+ * Clearfix.......Micro clearfix mixin.
+ * Hidden.........Mixin for hiding elements.
+ * Sass MQ........Default media query manager.
+ * Aliases........Easier mixin aliases.
+ *
+ * GENERIC
+ * Box-sizing.....Better default `box-sizing`.
+ * Normalize.css..A level playing field using @necolas’ Normalize.css.
+ * Reset..........A tiny reset to complement Normalize.css.
+ *
+ * ELEMENTS
+ * Page...........Set up our document’s default `font-size` and `line-height`.
+ * Headings.......Very minimal, font-size for headings 1 through 6.
+ * Images.........Base image styles.
+ * Tables.........Simple table styles.
+ *
+ * OBJECTS
+ * Layout.........Generic layout module.
+ *
+ * COMPONENTS
+ *
+ * UTILITIES
+ * Clearfix.......Bind our clearfix onto a utility class.
+ * Widths.........Simple width helper classes.
+ * Headings.......Reassigning our heading styles to helper classes.
+ * Hide...........Helper classes to hide content
+ * Print..........Reset-like styles taken from the HTML5 Boilerplate.
+ *
  */
 
 
 // SETTINGS
 @import "settings/igloo.settings.config";
+@import "settings/settings.core.scss"; // (requires, inuitcss)
 @import "settings/igloo.settings.global";
 
 
 // TOOLS
-@import "node_modules/sass-mq/mq";
+@import "tools/tools.font-size"; // (requires, inuitcss)
+@import "tools/tools.clearfix"; // (requires, inuitcss)
+@import "tools/tools.hidden"; // (requires, inuitcss)
+@import "tools/tools.sass-mq"; // (requires, sass-mq)
+@import "tools/tools.aliases";
 
 
 // GENERIC
+@import "generic/generic.box-sizing"; // (requires, inuitcss)
+@import "generic/generic.normalize"; // (requires, inuitcss)
+@import "generic/generic.reset"; // (requires, inuitcss)
 
 
 // ELEMENTS
+@import "elements/elements.page.scss"; // (requires, inuitcss)
+@import "elements/elements.headings.scss"; // (requires, inuitcss)
+@import "elements/elements.images.scss"; // (requires, inuitcss)
+@import "elements/elements.tables.scss"; // (requires, inuitcss)
 
 
 // OBJECTS
+@import "objects/objects.layout.scss"; // (requires, inuitcss)
+
+
+// COMPONENTS
 
 
 // UTILITIES
+@import "utilities/utilities.clearfix.scss"; // (requires, inuitcss)
+@import "utilities/utilities.widths.scss"; // (requires, inuitcss)
+@import "utilities/utilities.headings.scss"; // (requires, inuitcss)
+@import "utilities/utilities.hide.scss"; // (requires, inuitcss)
+@import "utilities/utilities.print.scss"; // (requires, inuitcss)

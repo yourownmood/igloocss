@@ -19,8 +19,14 @@ template_dir: ./aigis/template_hbs
 template_engine: hbs
 
 output_collection:
+  - components
+  - elements
+  - generic
+  - objects
   - settings
   - tags
+  - tools
+  - utilities
 
 component_dir: ./
 

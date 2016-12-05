@@ -1,0 +1,50 @@
+// ---------------------------------------------------
+// +++ UTILITIES HIDE +++
+// --------------------------------------------------
+
+// === IMPORT ===
+// --------------------------------------------------
+
+// INUITCSS UTILITIES HIDE
+
+// === DOCS ===
+// --------------------------------------------------
+
+// DOCS
+
+// --------------------------------------------------
+// +++ END +++
+// --------------------------------------------------
+
+
+// === IMPORT ===
+// --------------------------------------------------
+
+// INUITCSS UTILITIES HIDE
+
+@import "node_modules/inuitcss/utilities/utilities.hide";
+
+// === DOCS ===
+// --------------------------------------------------
+
+/*
+---
+name: Hide
+utilities:
+  - Hide
+---
+
+Hide only visually, but have it available for screen readers:
+http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+
+```html
+<div class="u-hidden-visually"></div>
+```
+
+Hide visually and from screen readers.
+
+```html
+<div class="u-hidden"></div>
+```
+
+*/
