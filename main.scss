@@ -37,6 +37,15 @@
  * OBJECTS
  * Layout.........Generic layout module.
  *
+ * COMPONENTS
+ *
+ * UTILITIES
+ * Clearfix.......Bind our clearfix onto a utility class.
+ * Widths.........Simple width helper classes.
+ * Headings.......Reassigning our heading styles to helper classes.
+ * Hide...........Helper classes to hide content
+ * Print..........Reset-like styles taken from the HTML5 Boilerplate.
+ *
  */
 
 
@@ -75,3 +84,8 @@
 
 
 // UTILITIES
+@import "utilities/utilities.clearfix.scss"; // (requires, inuitcss)
+@import "utilities/utilities.widths.scss"; // (requires, inuitcss)
+@import "utilities/utilities.headings.scss"; // (requires, inuitcss)
+@import "utilities/utilities.hide.scss"; // (requires, inuitcss)
+@import "utilities/utilities.print.scss"; // (requires, inuitcss)
