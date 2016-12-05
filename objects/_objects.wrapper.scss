@@ -1,0 +1,63 @@
+// ---------------------------------------------------
+// +++ OBJECTS WRAPPER +++
+// --------------------------------------------------
+
+// === VARIABLES ===
+// --------------------------------------------------
+
+// WRAPPER-WIDTH
+
+// === BASE ===
+// --------------------------------------------------
+
+// WRAPPER
+
+// === DOCS ===
+// --------------------------------------------------
+
+// DOCS
+
+// --------------------------------------------------
+// +++ END +++
+// --------------------------------------------------
+
+
+// === VARIABLES ===
+// --------------------------------------------------
+
+// WRAPPER-WIDTH
+
+$wrapper-width: 1200px;
+
+// === BASE ===
+// --------------------------------------------------
+
+// WRAPPER
+
+.o-wrapper {
+  @include inuit-clearfix();
+  padding-right: $inuit-global-spacing-unit;
+  padding-left:  $inuit-global-spacing-unit;
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: $wrapper-width;
+}
+
+// === DOCS ===
+// --------------------------------------------------
+
+/*
+---
+name: Wrapper
+objects:
+  - Wrapper
+---
+
+Page-level constraining and wrapping elements.
+`.o-wrapper` centers the wrapper in the page.
+
+```html
+<div class="o-wrapper"></div>
+```
+
+*/

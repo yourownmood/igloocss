@@ -35,6 +35,7 @@
  * Tables.........Simple table styles.
  *
  * OBJECTS
+ * Wrapper........Page constraint object.
  * Layout.........Generic layout module.
  *
  * COMPONENTS
@@ -77,6 +78,7 @@
 
 
 // OBJECTS
+@import "objects/objects.wrapper.scss";
 @import "objects/objects.layout.scss"; // (requires, inuitcss)
 
 
