@@ -21,6 +21,7 @@ template_engine: hbs
 output_collection:
   - elements
   - generic
+  - objects
   - settings
   - tags
   - tools

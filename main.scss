@@ -34,6 +34,9 @@
  * Images.........Base image styles.
  * Tables.........Simple table styles.
  *
+ * OBJECTS
+ * Layout.........Generic layout module.
+ *
  */
 
 
@@ -65,6 +68,7 @@
 
 
 // OBJECTS
+@import "objects/objects.layout.scss"; // (requires, inuitcss)
 
 
 // COMPONENTS
