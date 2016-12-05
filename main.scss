@@ -28,6 +28,12 @@
  * Normalize.css..A level playing field using @necolas’ Normalize.css.
  * Reset..........A tiny reset to complement Normalize.css.
  *
+ * ELEMENTS
+ * Page...........Set up our document’s default `font-size` and `line-height`.
+ * Headings.......Very minimal, font-size for headings 1 through 6.
+ * Images.........Base image styles.
+ * Tables.........Simple table styles.
+ *
  */
 
 
@@ -52,6 +58,10 @@
 
 
 // ELEMENTS
+@import "elements/elements.page.scss"; // (requires, inuitcss)
+@import "elements/elements.headings.scss"; // (requires, inuitcss)
+@import "elements/elements.images.scss"; // (requires, inuitcss)
+@import "elements/elements.tables.scss"; // (requires, inuitcss)
 
 
 // OBJECTS
