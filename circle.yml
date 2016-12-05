@@ -8,5 +8,4 @@ dependencies:
 test:
   override:
     - npm test
-    - npm run sass
-    - npm run styleguide
+    - npm run build

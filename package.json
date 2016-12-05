@@ -4,6 +4,8 @@
   "description": "Extensible, scalable, Sass-based, OOCS framework which houses inuit.css",
   "main": "main.scss",
   "scripts": {
+    "build": "npm run sass; npm run clean-css; npm run styleguide",
+    "clean-css": "./node_modules/.bin/cleancss -o build/main-min.css build/main.css",
     "lint": "./node_modules/.bin/stylelint \"**/*.scss\" --syntax scss",
     "pre-push": "npm test",
     "sass": "./node_modules/.bin/node-sass main.scss build/main.css",
@@ -23,6 +25,7 @@
   "author": "Steven Bax (yourownmood)",
   "license": "ISC",
   "devDependencies": {
+    "clean-css": "^3.4.21",
     "inuitcss": "^6.0.0-beta.4",
     "node-aigis": "^1.2.1",
     "node-sass": "^3.13.0",
