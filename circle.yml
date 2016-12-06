@@ -2,6 +2,7 @@ general:
   artifacts:
     - "build/main.css"
     - "build/main-min.css"
+    - "build/main-stats.json"
 machine:
   node:
     version: 4.4.7
