@@ -10,7 +10,7 @@
     "parker": "./node_modules/.bin/parker build/main-min.css --format=json | tee build/main-stats.json",
     "pre-push": "npm test",
     "sass": "./node_modules/.bin/node-sass main.scss build/main.css",
-    "start": "npm run build",
+    "start": "node server.js",
     "styleguide": "./node_modules/.bin/aigis run -c ./aigis_config.yml",
     "test": "npm run lint"
   },
