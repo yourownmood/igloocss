@@ -16,6 +16,6 @@ test:
     - npm run build
 deployment:
   staging:
-    branch: igloo-heroku-setup
+    branch: master
     heroku:
       appname: igloocss
