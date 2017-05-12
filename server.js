@@ -1,33 +1,10 @@
-var sys = require("sys"),
-my_http = require("http"),
-path = require("path"),
-url = require("url"),
-filesys = require("fs");
-my_http.createServer(function(request,response){
-  var my_path = url.parse(request.url).pathname;
-  var full_path = path.join(process.cwd(),my_path);
-  path.exists(full_path,function(exists){
-    if(!exists){
-      response.writeHeader(404, {"Content-Type": "text/plain"});
-      response.write("404 Not Found\n");
-      response.end();
-    }
-    else{
-      filesys.readFile(full_path, "binary", function(err, file) {
-           if(err) {
-               response.writeHeader(500, {"Content-Type": "text/plain"});
-               response.write(err + "\n");
-               response.end();
+var express = require('express');
+var app = express();
 
-           }
-         else{
-          response.writeHeader(200);
-              response.write(file, "binary");
-              response.end();
-        }
+app.set('port', (process.env.PORT || 3000));
 
-      });
-    }
-  });
-}).listen(8080);
-sys.puts("Server Running on 8080");
+app.use(express.static(__dirname + '/dist'));
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
