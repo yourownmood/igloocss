@@ -1,5 +1,6 @@
 dist/
 build/
+work/
 node_modules/
 .sass-cache
 npm-debug.log
