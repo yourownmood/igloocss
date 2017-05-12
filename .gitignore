@@ -1,5 +1,4 @@
 dist/
-build/
 work/
 node_modules/
 .sass-cache
