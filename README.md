@@ -5,6 +5,3 @@ Extensible, scalable, Sass-based, OOCS framework which houses [inuit.css](http:/
 
 ## Trello board
 [Trello board](https://trello.com/b/HZ3RZGy3/igloocss "Trello board")
-
-## Artifacts
-[Build artifacts](https://circleci.com/api/v1/project/yourownmood/igloocss/latest/artifacts)
