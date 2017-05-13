@@ -4,7 +4,7 @@
   "description": "Extensible, scalable, Sass-based, OOCS framework which houses inuit.css",
   "main": "main.scss",
   "scripts": {
-    "build": "rimraf dist/; npm run sass; npm run clean-css; npm run parker; npm run styleguide; cp static/index.html dist",
+    "build": "rimraf dist/; npm run sass; npm run clean-css; npm run parker; npm run styleguide; cp static/* dist",
     "clean-css": "./node_modules/.bin/cleancss -o dist/assets/main-min.css dist/assets/main.css",
     "lint": "./node_modules/.bin/stylelint \"**/*.scss\" --syntax scss",
     "parker": "./node_modules/.bin/parker dist/assets/main-min.css --format=json | tee dist/assets/main-stats.json",
