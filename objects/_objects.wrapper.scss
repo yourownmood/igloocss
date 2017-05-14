@@ -36,11 +36,12 @@ $wrapper-width: 1200px;
 
 .o-wrapper {
   @include inuit-clearfix();
-  padding-right: $inuit-global-spacing-unit;
-  padding-left:  $inuit-global-spacing-unit;
-  margin-right: auto;
-  margin-left:  auto;
   max-width: $wrapper-width;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $inuit-global-spacing-unit;
+  padding-left: $inuit-global-spacing-unit;
 }
 
 // === DOCS ===
