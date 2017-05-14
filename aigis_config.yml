@@ -11,11 +11,11 @@ dest: ./dist/docs
 # The assets needed to build the docs
 # You may put doc related assets here too: images, css, etc.
 dependencies:
-  - ./aigis/aigis_assets
+  - ./docs/aigis_assets
 
 # The directory containing the tempalte files to generate pages
 # It must contain 'layout.xxx' and 'index.xxx' (.ejs or .jade or .hbs)
-template_dir: ./aigis/template_hbs
+template_dir: ./docs/template_hbs
 template_engine: hbs
 
 output_collection:
