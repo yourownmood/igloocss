@@ -4,15 +4,15 @@
   "description": "Extensible, scalable, Sass-based, OOCS framework which houses inuit.css",
   "main": "main.scss",
   "scripts": {
-    "build": "rimraf dist/; npm run sass; npm run clean-css; npm run parker; npm run styleguide; cp static/* dist",
-    "clean-css": "./node_modules/.bin/cleancss -o dist/assets/main-min.css dist/assets/main.css",
-    "parker": "./node_modules/.bin/parker dist/assets/main-min.css --format=json | tee dist/assets/main-stats.json",
+    "build": "rimraf dist/; npm run sass; npm run clean-css; npm run parker; npm run styleguide; cp site/*.html dist",
+    "clean-css": "./node_modules/.bin/cleancss -o dist/igloocss/main-min.css dist/igloocss/main.css",
+    "parker": "./node_modules/.bin/parker dist/igloocss/main-min.css --format=json | tee dist/igloocss/main-stats.json",
     "postinstall": "npm run build",
     "pre-push": "npm test",
-    "sass": "./node_modules/.bin/node-sass main.scss dist/assets/main.css",
-    "start": "node server.js",
+    "sass": "./node_modules/.bin/node-sass igloocss/main.scss dist/igloocss/main.css",
+    "start": "node site/server.js",
     "styleguide": "./node_modules/.bin/aigis run -c ./aigis_config.yml",
-    "stylelint": "stylelint '**/*.scss' --syntax scss --config .stylelintrc",
+    "stylelint": "stylelint 'igloocss/**/*.scss' --syntax scss --config .stylelintrc",
     "test": "npm run stylelint"
   },
   "keywords": [
