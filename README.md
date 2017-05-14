@@ -1,5 +1,6 @@
 # igloocss
-[![CircleCI](https://circleci.com/gh/yourownmood/igloocss/tree/master.svg?style=svg)](https://circleci.com/gh/yourownmood/igloocss/tree/master)
+[![CircleCI](https://circleci.com/gh/yourownmood/igloocss/tree/master.svg?style=shield)](https://circleci.com/gh/yourownmood/igloocss/tree/master)
+[![Heroku](http://heroku-badge.herokuapp.com/?app=igloocss&style=flat&svg=1)](https://igloocss.herokuapp.com/)
 
 [igloocss.com](http://igloocss.com "igloocss website")
 
