@@ -26,6 +26,7 @@
     "silent": false
   },
   "author": "Steven Bax (yourownmood)",
+  "homepage": "http://igloocss.com",
   "license": "ISC",
   "dependencies": {
     "clean-css": "^3.4.21",
