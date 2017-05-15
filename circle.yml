@@ -3,8 +3,8 @@ machine:
     version: 7.4.0
 test:
   override:
-    - npm test
-    - npm run build
+    - yarn test
+    - yarn run build
 deployment:
   staging:
     branch: master
