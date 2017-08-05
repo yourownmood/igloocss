@@ -37,8 +37,8 @@
     "parker": "0.0.10",
     "pre-push": "^0.1.1",
     "sass-mq": "^3.3.1",
-    "stylelint": "7.9.0",
-    "stylelint-order": "0.4.3"
+    "stylelint": "8.0.0",
+    "stylelint-order": "0.6.0"
   },
   "devDependencies": {
     "husky": "^0.13.3"
