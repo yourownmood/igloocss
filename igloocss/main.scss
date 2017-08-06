@@ -11,9 +11,9 @@
 
 
 /* SETTINGS
- * Config.........Igloo configuration.
- * Core...........inuitcss’ core and setup settings.
- * Global.........Igloo-wide vars and settings.
+ * Config...............Igloo configuration.
+ * Core.................inuitcss’ core and setup settings.
+ * Global...............Igloo-wide vars and settings.
  */
 @import "settings/igloo.settings.config";
 @import "settings/settings.core.scss"; // (requires, inuitcss)
@@ -21,11 +21,11 @@
 
 
 /* TOOLS
- * Font-size......A mixin which guarantees baseline-friendly line-heights.
- * Clearfix.......Micro clearfix mixin.
- * Hidden.........Mixin for hiding elements.
- * Sass MQ........Default media query manager.
- * Aliases........Easier mixin aliases.
+ * Font-size............A mixin which guarantees baseline-friendly line-heights.
+ * Clearfix.............Micro clearfix mixin.
+ * Hidden...............Mixin for hiding elements.
+ * Sass MQ..............Default media query manager.
+ * Aliases..............Easier mixin aliases.
  */
 @import "tools/tools.font-size"; // (requires, inuitcss)
 @import "tools/tools.clearfix"; // (requires, inuitcss)
@@ -35,9 +35,9 @@
 
 
 /* GENERIC
- * Box-sizing.....Better default `box-sizing`.
- * Normalize.css..A level playing field using @necolas’ Normalize.css.
- * Reset..........A tiny reset to complement Normalize.css.
+ * Box-sizing...........Better default `box-sizing`.
+ * Normalize.css........A level playing field using @necolas’ Normalize.css.
+ * Reset................A tiny reset to complement Normalize.css.
  */
 @import "generic/generic.box-sizing"; // (requires, inuitcss)
 @import "generic/generic.normalize"; // (requires, inuitcss)
@@ -45,23 +45,23 @@
 
 
 /* ELEMENTS
- * Page...........Set up our document’s default `font-size` and `line-height`.
- * Headings.......Very minimal, font-size for headings 1 through 6.
- * Images.........Base image styles.
- * Tables.........Simple table styles.
+ * Headings.............Very minimal, font-size for headings 1 through 6.
+ * Images...............Base image styles.
+ * Page.................Set up our document’s default `font-size` and `line-height`.
+ * Tables...............Simple table styles.
  */
-@import "elements/elements.page.scss"; // (requires, inuitcss)
 @import "elements/elements.headings.scss"; // (requires, inuitcss)
 @import "elements/elements.images.scss"; // (requires, inuitcss)
+@import "elements/elements.page.scss"; // (requires, inuitcss)
 @import "elements/elements.tables.scss"; // (requires, inuitcss)
 
 
 /* OBJECTS
- * Wrapper........Page constraint object.
- * Layout.........Generic layout module.
+ * Layout...............Generic layout module.
+ * Wrapper..............Page constraint object.
  */
-@import "objects/objects.wrapper.scss";
 @import "objects/objects.layout.scss"; // (requires, inuitcss)
+@import "objects/objects.wrapper.scss";
 
 
 /* COMPONENTS
@@ -69,14 +69,18 @@
 
 
 /* UTILITIES
- * Clearfix.......Bind our clearfix onto a utility class.
- * Widths.........Simple width helper classes.
- * Headings.......Reassigning our heading styles to helper classes.
- * Hide...........Helper classes to hide content
- * Print..........Reset-like styles taken from the HTML5 Boilerplate.
+ * Clearfix.............Bind our clearfix onto a utility class.
+ * Headings.............Reassigning our heading styles to helper classes.
+ * Hide.................Helper classes to hide content
+ * Print................Reset-like styles taken from the HTML5 Boilerplate.
+ * Spacings.............Utility classes to put spacing onto elements.
+ * Responsive-spacings..Utility classes to put responsing spacing onto elements.
+ * Widths...............Simple width helper classes.
  */
 @import "utilities/utilities.clearfix.scss"; // (requires, inuitcss)
-@import "utilities/utilities.widths.scss"; // (requires, inuitcss)
 @import "utilities/utilities.headings.scss"; // (requires, inuitcss)
 @import "utilities/utilities.hide.scss"; // (requires, inuitcss)
 @import "utilities/utilities.print.scss"; // (requires, inuitcss)
+@import "utilities/utilities.responsive-spacings.scss"; // (requires, inuitcss)
+@import "utilities/utilities.spacings.scss"; // (requires, inuitcss)
+@import "utilities/utilities.widths.scss"; // (requires, inuitcss)
