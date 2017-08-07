@@ -15,9 +15,9 @@
  * Core.................inuitcss’ core and setup settings.
  * Global...............Igloo-wide vars and settings.
  */
-@import "settings/igloo.settings.config";
-@import "settings/settings.core.scss"; // (requires, inuitcss)
-@import "settings/igloo.settings.global";
+@import 'settings/igloo.settings.config';
+@import 'settings/settings.core.scss'; // (requires, inuitcss)
+@import 'settings/igloo.settings.global';
 
 
 /* TOOLS
@@ -27,11 +27,11 @@
  * Sass MQ..............Default media query manager.
  * Aliases..............Easier mixin aliases.
  */
-@import "tools/tools.font-size"; // (requires, inuitcss)
-@import "tools/tools.clearfix"; // (requires, inuitcss)
-@import "tools/tools.hidden"; // (requires, inuitcss)
-@import "tools/tools.sass-mq"; // (requires, sass-mq)
-@import "tools/tools.aliases";
+@import 'tools/tools.font-size'; // (requires, inuitcss)
+@import 'tools/tools.clearfix'; // (requires, inuitcss)
+@import 'tools/tools.hidden'; // (requires, inuitcss)
+@import 'tools/tools.sass-mq'; // (requires, sass-mq)
+@import 'tools/tools.aliases';
 
 
 /* GENERIC
@@ -39,9 +39,9 @@
  * Normalize.css........A level playing field using @necolas’ Normalize.css.
  * Reset................A tiny reset to complement Normalize.css.
  */
-@import "generic/generic.box-sizing"; // (requires, inuitcss)
-@import "generic/generic.normalize"; // (requires, inuitcss)
-@import "generic/generic.reset"; // (requires, inuitcss)
+@import 'generic/generic.box-sizing'; // (requires, inuitcss)
+@import 'generic/generic.normalize'; // (requires, inuitcss)
+@import 'generic/generic.reset'; // (requires, inuitcss)
 
 
 /* ELEMENTS
@@ -50,18 +50,18 @@
  * Page.................Set up our document’s default `font-size` and `line-height`.
  * Tables...............Simple table styles.
  */
-@import "elements/elements.headings.scss"; // (requires, inuitcss)
-@import "elements/elements.images.scss"; // (requires, inuitcss)
-@import "elements/elements.page.scss"; // (requires, inuitcss)
-@import "elements/elements.tables.scss"; // (requires, inuitcss)
+@import 'elements/elements.headings.scss'; // (requires, inuitcss)
+@import 'elements/elements.images.scss'; // (requires, inuitcss)
+@import 'elements/elements.page.scss'; // (requires, inuitcss)
+@import 'elements/elements.tables.scss'; // (requires, inuitcss)
 
 
 /* OBJECTS
  * Layout...............Generic layout module.
  * Wrapper..............Page constraint object.
  */
-@import "objects/objects.layout.scss"; // (requires, inuitcss)
-@import "objects/objects.wrapper.scss";
+@import 'objects/objects.layout.scss'; // (requires, inuitcss)
+@import 'objects/objects.wrapper.scss';
 
 
 /* COMPONENTS
@@ -77,10 +77,10 @@
  * Responsive-spacings..Utility classes to put responsing spacing onto elements.
  * Widths...............Simple width helper classes.
  */
-@import "utilities/utilities.clearfix.scss"; // (requires, inuitcss)
-@import "utilities/utilities.headings.scss"; // (requires, inuitcss)
-@import "utilities/utilities.hide.scss"; // (requires, inuitcss)
-@import "utilities/utilities.print.scss"; // (requires, inuitcss)
-@import "utilities/utilities.responsive-spacings.scss"; // (requires, inuitcss)
-@import "utilities/utilities.spacings.scss"; // (requires, inuitcss)
-@import "utilities/utilities.widths.scss"; // (requires, inuitcss)
+@import 'utilities/utilities.clearfix.scss'; // (requires, inuitcss)
+@import 'utilities/utilities.headings.scss'; // (requires, inuitcss)
+@import 'utilities/utilities.hide.scss'; // (requires, inuitcss)
+@import 'utilities/utilities.print.scss'; // (requires, inuitcss)
+@import 'utilities/utilities.responsive-spacings.scss'; // (requires, inuitcss)
+@import 'utilities/utilities.spacings.scss'; // (requires, inuitcss)
+@import 'utilities/utilities.widths.scss'; // (requires, inuitcss)

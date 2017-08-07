@@ -1,10 +1,11 @@
-var express = require('express');
-var app = express();
+const express = require('express')
+const path = require('path')
+const app = express()
 
-app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 5000))
 
-app.use(express.static(__dirname + '/dist'));
+app.use(express.static(path.join(__dirname, '/dist')))
 
-app.listen(app.get('port'), function() {
-  console.log('Node app is running ' + __dirname + '/dist, on port', app.get('port'));
-});
+app.listen(app.get('port'), function () {
+  console.log('Node app is running ' + path.join(__dirname, '/dist') + ', on port', app.get('port'))
+})

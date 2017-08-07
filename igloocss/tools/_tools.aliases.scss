@@ -14,6 +14,10 @@
 // === TOOLS ===
 // --------------------------------------------------
 
+@mixin font-size($args...) {
+  @include inuit-font-size($args...);
+}
+
 // -
 
 // Reassign lengthy font-size mixin to `font-size()`.
