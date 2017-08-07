@@ -636,3 +636,11 @@ body {
 .aigis-contents__body > h3 {
   font-size: 24px;
 }
+
+.aigis-hide-preview .aigis-preview {
+  display: none;
+}
+
+.aigis-hide-code pre {
+  display: none;
+}
