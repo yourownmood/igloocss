@@ -23,7 +23,17 @@
         <li class="aigis-tags__item aigis-tags__item--{{this}}">{{this}}</li>
       {{/each}}
     </ul>
-    {{{this.html}}}
+    {{#if this.config.hidePreview}}
+      <div class="aigis-hide-preview aigis-module">
+        {{{this.html}}}
+      </div>
+    {{else if this.config.hideCode}}
+      <div class="aigis-hide-code aigis-module">
+        {{{this.html}}}
+      </div>
+    {{else}}
+      {{{this.html}}}
+    {{/if}}
   </div>
   {{/each}}
 </div>
