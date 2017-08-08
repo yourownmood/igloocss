@@ -58,9 +58,11 @@
 
 /* OBJECTS
  * Layout...............Generic layout module.
+ * List-inline..........List items inline.
  * Wrapper..............Page constraint object.
  */
 @import 'objects/objects.layout.scss'; // (requires, inuitcss)
+@import 'objects/objects.list-inline.scss'; // (requires, inuitcss)
 @import 'objects/objects.wrapper.scss';
 
 
