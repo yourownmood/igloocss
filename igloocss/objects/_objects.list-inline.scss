@@ -1,0 +1,34 @@
+// --------------------------------------------------
+// +++ OBJECTS LIST-INLINE +++
+// --------------------------------------------------
+
+
+// === IMPORT ===
+// --------------------------------------------------
+
+// INUITCSS OBJECTS LIST-INLINE
+
+@import "node_modules/inuitcss/objects/objects.list-inline";
+
+// === DOCS ===
+// --------------------------------------------------
+
+/*
+---
+name: List-inline
+objects:
+  - List-inline
+---
+
+The list-inline object simply displays a list of items in one line.
+
+```html
+<ul class="o-list-inline">
+  <li class="o-list-inline__item">Next</li>
+  <li class="o-list-inline__item">to</li>
+  <li class="o-list-inline__item">each</li>
+  <li class="o-list-inline__item">other.</li>
+</ul>
+```
+
+*/
