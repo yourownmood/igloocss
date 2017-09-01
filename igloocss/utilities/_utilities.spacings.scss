@@ -28,11 +28,11 @@ $inuit-spacing-properties: (
 // SIZE
 
 $inuit-spacing-sizes: (
-  null: $inuit-global-spacing-unit,
-  '-tiny': $inuit-global-spacing-unit-tiny,
-  '-small': $inuit-global-spacing-unit-small,
-  '-large': $inuit-global-spacing-unit-large,
-  '-huge': $inuit-global-spacing-unit-huge,
+  null: $unit,
+  '-tiny': $unit-tiny,
+  '-small': $unit-small,
+  '-large': $unit-large,
+  '-huge': $unit-huge,
   '-none': 0
 ) !default;
 
