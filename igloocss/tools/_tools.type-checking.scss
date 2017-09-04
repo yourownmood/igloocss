@@ -1,0 +1,93 @@
+// --------------------------------------------------
+// +++ TOOLS TYPE-CHECKING +++
+// --------------------------------------------------
+
+
+// === TOOLS ===
+// --------------------------------------------------
+
+// IS-NUMBER
+
+@function is-number($value) {
+  @return type-of($value) == 'number';
+}
+
+// IS-TIME
+
+@function is-time($value) {
+  @return is-number($value) and index('ms' 's', unit($value)) != null;
+}
+
+// IS-ANGLE
+
+@function is-angle($value) {
+  @return is-number($value) and index('deg' 'rad' 'grad' 'turn', unit($value)) != null;
+}
+
+// IS-INTEGER
+
+@function is-integer($value) {
+  @return is-number($value) and round($value) == $value;
+}
+
+// IS-RELATIVE-LENGTH
+
+@function is-relative-length($value) {
+  @return is-number($value) and index('em' 'ex' 'ch' 'rem' 'vw' 'vh' 'vmin' 'vmax', unit($value)) != null;
+}
+
+// IS-ABSOLUTE-LENGTH
+
+@function is-absolute-length($value) {
+  @return is-number($value) and index('cm' 'mm' 'in' 'px' 'pt' 'pc', unit($value)) != null;
+}
+
+// IS-PERCENTAGE
+
+@function is-percentage($value) {
+  @return is-number($value) and unit($value) == '%';
+}
+
+// IS-LENGTH
+
+@function is-length($value) {
+  @return is-relative-length($value) or is-absolute-length($value);
+}
+
+// IS-RESOLUTION
+
+@function is-resolution($value) {
+  @return is-number($value) and index('dpi' 'dpcm' 'dppx', unit($value)) != null;
+}
+
+// IS-POSITION
+
+@function is-position($value) {
+  @return is-length($value) or is-percentage($value) or index('top' 'right' 'bottom' 'left' 'center', $value) != null;
+}
+
+// === DOCS ===
+// --------------------------------------------------
+
+/*
+---
+name: Type-checking
+tools:
+  - Type-checking
+---
+
+A collection of functions for testing if values are of a certain type.
+
+```scss
+@mixin example-mixin($value) {
+  @if (is-percentage($value)) {
+    background-position: $value;
+  }
+
+  @else {
+    @error "A percentage value should be provided.";
+  }
+}
+```
+
+*/
