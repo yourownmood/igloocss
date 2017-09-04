@@ -78,10 +78,21 @@ tools:
 
 A collection of functions for testing if values are of a certain type.
 
+* `is-number`
+* `is-time`
+* `is-angle`
+* `is-integer`
+* `is-relative-length`
+* `is-absolute-length`
+* `is-percentage`
+* `is-length`
+* `is-resolution`
+* `is-position`
+
 ```scss
 @mixin example-mixin($value) {
   @if (is-percentage($value)) {
-    background-position: $value;
+    top: $value;
   }
 
   @else {
