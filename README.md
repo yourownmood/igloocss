@@ -6,5 +6,37 @@
 
 Extensible, scalable, Sass-based, OOCS framework which houses [inuit.css](http://inuitcss.com/ "inuit.css").
 
-## Trello board
+## What is this, and why is this not a node module:
+
+This is a boilerplate setup for a itcss project.
+**Which includes:**
+- A minimal inuitcss setup (plus some extras).
+- At hand documentation of the inuitcss files included.
+- A way of testing and writing scss tests.
+- A way of generating scss documentation.
+
+---
+
+## How to include this in your existing project:
+
+Coming soon.
+
+---
+
+## How to run this project:
+
+### First setup:
+
+* Install [NodeJS LTS version](https://nodejs.org/en/)
+* Install [Yarn](https://yarnpkg.com/en/)
+* Install dependencies: `$ yarn install` in this project folder.
+
+### How to run:
+
+Run `$ yarn start` in your terminal.
+
+---
+
+## Backlog:
+
 [Trello board](https://trello.com/b/HZ3RZGy3/igloocss "Trello board")
