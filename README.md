@@ -9,19 +9,18 @@ Extensible, scalable, Sass-based, OOCS framework which houses [inuit.css](http:/
 ## What is this, and why is this not a node module:
 
 This is a boilerplate setup for a itcss project.
+
 **Which includes:**
 - A minimal inuitcss setup (plus some extras).
 - At hand documentation of the inuitcss files included.
+- Stylelint for scss files.
+- Scss statistics reporting.
 - A way of testing and writing scss tests.
 - A way of generating scss documentation.
-
----
 
 ## How to include this in your existing project:
 
 Coming soon.
-
----
 
 ## How to run this project:
 
@@ -34,8 +33,6 @@ Coming soon.
 ### How to run:
 
 Run `$ yarn start` in your terminal.
-
----
 
 ## Backlog:
 
