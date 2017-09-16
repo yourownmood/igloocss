@@ -16,8 +16,9 @@
  * Global...............Igloo-wide vars and settings.
  */
 @import 'settings/igloo.settings.config';
-@import 'settings/settings.core.scss'; // (requires, inuitcss)
+@import 'settings/settings.core'; // (requires, inuitcss)
 @import 'settings/igloo.settings.global';
+@import 'settings/settings.breakpoints';
 
 
 /* TOOLS
@@ -52,10 +53,10 @@
  * Page.................Set up our document’s default `font-size` and `line-height`.
  * Tables...............Simple table styles.
  */
-@import 'elements/elements.headings.scss'; // (requires, inuitcss)
-@import 'elements/elements.images.scss'; // (requires, inuitcss)
-@import 'elements/elements.page.scss'; // (requires, inuitcss)
-@import 'elements/elements.tables.scss'; // (requires, inuitcss)
+@import 'elements/elements.headings'; // (requires, inuitcss)
+@import 'elements/elements.images'; // (requires, inuitcss)
+@import 'elements/elements.page'; // (requires, inuitcss)
+@import 'elements/elements.tables'; // (requires, inuitcss)
 
 
 /* OBJECTS
@@ -63,9 +64,9 @@
  * List-inline..........List items inline.
  * Wrapper..............Page constraint object.
  */
-@import 'objects/objects.layout.scss'; // (requires, inuitcss)
-@import 'objects/objects.list-inline.scss'; // (requires, inuitcss)
-@import 'objects/objects.wrapper.scss';
+@import 'objects/objects.layout'; // (requires, inuitcss)
+@import 'objects/objects.list-inline'; // (requires, inuitcss)
+@import 'objects/objects.wrapper';
 
 
 /* COMPONENTS
@@ -81,10 +82,10 @@
  * Responsive-spacings..Utility classes to put responsing spacing onto elements.
  * Widths...............Simple width helper classes.
  */
-@import 'utilities/utilities.clearfix.scss'; // (requires, inuitcss)
-@import 'utilities/utilities.headings.scss'; // (requires, inuitcss)
-@import 'utilities/utilities.hide.scss'; // (requires, inuitcss)
-@import 'utilities/utilities.print.scss'; // (requires, inuitcss)
-@import 'utilities/utilities.responsive-spacings.scss'; // (requires, inuitcss)
-@import 'utilities/utilities.spacings.scss'; // (requires, inuitcss)
-@import 'utilities/utilities.widths.scss'; // (requires, inuitcss)
+@import 'utilities/utilities.clearfix'; // (requires, inuitcss)
+@import 'utilities/utilities.headings'; // (requires, inuitcss)
+@import 'utilities/utilities.hide'; // (requires, inuitcss)
+@import 'utilities/utilities.print'; // (requires, inuitcss)
+@import 'utilities/utilities.responsive-spacings'; // (requires, inuitcss)
+@import 'utilities/utilities.spacings'; // (requires, inuitcss)
+@import 'utilities/utilities.widths'; // (requires, inuitcss)
