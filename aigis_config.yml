@@ -12,6 +12,7 @@ dest: ./dist/docs
 # You may put doc related assets here too: images, css, etc.
 dependencies:
   - ./docs/aigis_assets
+  - ./dist/igloocss/main-min.css
 
 # The directory containing the tempalte files to generate pages
 # It must contain 'layout.xxx' and 'index.xxx' (.ejs or .jade or .hbs)
