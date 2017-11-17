@@ -1,10 +1,20 @@
 machine:
   node:
-    version: 7.4.0
+    version: 8.9.1
+  environment:
+    PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+
+dependencies:
+  override:
+    - yarn
+  cache_directories:
+    - ~/.cache/yarn
+
 test:
   override:
     - yarn test
     - yarn run build
+
 deployment:
   staging:
     branch: master
