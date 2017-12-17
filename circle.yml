@@ -14,9 +14,3 @@ test:
   override:
     - yarn test
     - yarn run build
-
-deployment:
-  staging:
-    branch: master
-    heroku:
-      appname: igloocss

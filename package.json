@@ -10,7 +10,6 @@
     "postinstall": "yarn build",
     "prepush": "yarn test",
     "sass": "./node_modules/.bin/node-sass igloocss/main.scss dist/igloocss/main.css",
-    "start": "node server.js",
     "styleguide": "./node_modules/.bin/aigis run -c ./aigis_config.yml",
     "stylelint": "stylelint 'igloocss/**/*.{scss}', 'docs/**/*.{scss,css}' --syntax scss --config .stylelintrc",
     "test": "yarn stylelint; yarn standard; yarn mocha;",
