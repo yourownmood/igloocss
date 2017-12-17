@@ -14,3 +14,9 @@ test:
   override:
     - yarn test
     - yarn run build
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - ./runscripts/deploy-ghpages.sh
