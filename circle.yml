@@ -16,7 +16,7 @@ test:
     - yarn run build
 
 deployment:
-  staging:
+  production:
     branch: master
-    heroku:
-      appname: igloocss
+    commands:
+      - ./runscripts/deploy-ghpages.sh
