@@ -1,0 +1,30 @@
+{
+    "total-stylesheets": 1,
+    "total-stylesheet-size": 14100,
+    "total-rules": 275,
+    "total-selectors": 355,
+    "total-identifiers": 399,
+    "total-declarations": 380,
+    "selectors-per-rule": 1.290909090909091,
+    "identifiers-per-selector": 1.611267605633803,
+    "specificity-per-selector": 8.011267605633803,
+    "top-selector-specificity": 21,
+    "top-selector-specificity-selector": "a[href]:after",
+    "total-id-selectors": 0,
+    "total-unique-colours": 3,
+    "unique-colours": [
+        "#FFFF00",
+        "#000000",
+        "#999999"
+    ],
+    "total-important-keywords": 240,
+    "total-media-queries": 6,
+    "media-queries": [
+        "print",
+        "(min-width:20em)",
+        "(min-width:30em)",
+        "(min-width:46.25em)",
+        "(min-width:61.25em)",
+        "(min-width:81.25em)"
+    ]
+}
