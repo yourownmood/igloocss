@@ -8,22 +8,14 @@
 
 // WRAPPER-WIDTH
 
-$wrapper-width: 1200px;
+$inuit-wrapper-width: 1200px !default;
 
-// === BASE ===
+// === IMPORT ===
 // --------------------------------------------------
 
-// WRAPPER
+// INUITCSS OBJECTS WRAPPER
 
-.o-wrapper {
-  @include inuit-clearfix();
-  max-width: $wrapper-width;
-
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $unit;
-  padding-left: $unit;
-}
+@import "node_modules/inuitcss/objects/objects.wrapper";
 
 // === DOCS ===
 // --------------------------------------------------

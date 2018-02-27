@@ -31,7 +31,7 @@
   "dependencies": {
     "clean-css": "^3.4.21",
     "express": "^4.15.2",
-    "inuitcss": "^6.0.0-beta.5",
+    "inuitcss": "^6.0.0",
     "node-aigis": "^1.2.1",
     "node-sass": "^3.13.0",
     "parker": "0.0.10",
