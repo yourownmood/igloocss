@@ -7,6 +7,7 @@ describe('_tools.aliases.scss', function () {
   const file = path.resolve(__dirname, '_tools.aliases.scss')
   const sassaby = new Sassaby(file, {
     variables: {
+      'inuit-global-baseline': '6px',
       'inuit-global-spacing-unit': '12px',
       'inuit-global-spacing-unit-tiny': '8px',
       'inuit-global-spacing-unit-small': '4px',

@@ -8,21 +8,37 @@
 
 // DIRECTIONS
 
-$inuit-responsive-spacing-directions: (
-  "-bottom": "-bottom",
-) !default;
+/*
+* How to use:
+*
+* $inuit-responsive-spacing-directions: (
+*   null: null,
+*   "-bottom": "-bottom",
+* );
+*/
+$inuit-responsive-spacing-directions: null !default;
 
 // PROPERTIES
 
-$inuit-responsive-spacing-properties: (
-  "margin": "margin",
-) !default;
+/*
+* How to use:
+*
+* $inuit-responsive-spacing-properties: (
+*   "margin": "margin",
+* );
+*/
+$inuit-responsive-spacing-properties: null !default;
 
 // SIZE
 
-$inuit-responsive-spacing-sizes: (
-  "-none": 0
-) !default;
+/*
+* How to use:
+*
+* $inuit-responsive-spacing-sizes: (
+*   "-small": $inuit-global-spacing-unit-small,
+* );
+*/
+$inuit-responsive-spacing-sizes: null !default;
 
 // === IMPORT ===
 // --------------------------------------------------
