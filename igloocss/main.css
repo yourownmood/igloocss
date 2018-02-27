@@ -753,22 +753,22 @@ A very simple reset that sits on top of Normalize.css.
 h1 {
   font-size: 36px;
   font-size: 2.25rem;
-  line-height: 1.33333; }
+  line-height: 1.16667; }
 
 h2 {
   font-size: 28px;
   font-size: 1.75rem;
-  line-height: 1.71429; }
+  line-height: 1.28571; }
 
 h3 {
   font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1; }
+  line-height: 1.25; }
 
 h4 {
   font-size: 20px;
   font-size: 1.25rem;
-  line-height: 1.2; }
+  line-height: 1.5; }
 
 h5 {
   font-size: 18px;
@@ -828,12 +828,11 @@ img {
   /* [3] */ }
 
 /**
- * 1. If a `width` and/or `height` attribute have been explicitly defined, let’s
- *    not make the image fluid.
- */
+   * If a `width` and/or `height` attribute has been explicitly defined, let’s
+   * not make the image fluid.
+   */
 img[width],
 img[height] {
-  /* [1] */
   max-width: none; }
 
 /*
@@ -969,7 +968,7 @@ Ensure tables fill up as much space as possible.
  *
  * There are plenty more options available to us: explore them below.
  */
-/* Default/mandatory classes.
+/* Default/mandatory classes
    ========================================================================== */
 /**
  * 1. Allows us to use the layout object on any type of element.
@@ -1016,7 +1015,7 @@ Ensure tables fill up as much space as possible.
   /* [6] */
   font-size: 1rem; }
 
-/* Gutter size modifiers.
+/* Gutter size modifiers
    ========================================================================== */
 .o-layout--flush {
   margin-left: 0; }
@@ -1043,7 +1042,7 @@ Ensure tables fill up as much space as possible.
   .o-layout--huge > .o-layout__item {
     padding-left: 96px; }
 
-/* Vertical alignment modifiers.
+/* Vertical alignment modifiers
    ========================================================================== */
 /**
  * Align all grid items to the middles of each other.
@@ -1059,7 +1058,7 @@ Ensure tables fill up as much space as possible.
 
 /**
  * Stretch all grid items of each row to have an equal-height.
- * Please be aware that this modifier class doesn't take any effect in IE9 and
+ * Please be aware that this modifier class doesn’t take any effect in IE9 and
  * below and other older browsers due to the lack of `display: flex` support.
  */
 .o-layout--stretch {
@@ -1067,8 +1066,14 @@ Ensure tables fill up as much space as possible.
   flex-wrap: wrap; }
   .o-layout--stretch > .o-layout__item {
     display: flex; }
+  .o-layout--stretch.o-layout--center {
+    justify-content: center; }
+  .o-layout--stretch.o-layout--right {
+    justify-content: flex-end; }
+  .o-layout--stretch.o-layout--left {
+    justify-content: flex-start; }
 
-/* Fill order modifiers.
+/* Fill order modifiers
    ========================================================================== */
 /**
  * Fill up the layout system from the centre.
@@ -1103,7 +1108,7 @@ Ensure tables fill up as much space as possible.
   .o-layout--reverse > .o-layout__item {
     direction: ltr; }
 
-/* Auto-widths modifier.
+/* Auto-widths modifier
    ========================================================================== */
 /**
  * Cause layout items to take up a non-explicit amount of width.
@@ -1207,12 +1212,18 @@ The list-inline object simply displays a list of items in one line.
 ```
 
 */
+/* ==========================================================================
+   #WRAPPER
+   ========================================================================== */
+/**
+ * Page-level constraining and wrapping elements.
+ */
 .o-wrapper {
-  max-width: 1200px;
+  padding-right: 24px;
+  padding-left: 24px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 24px;
-  padding-left: 24px; }
+  max-width: 1200px; }
   .o-wrapper:after {
     content: "" !important;
     display: block !important;
@@ -1289,22 +1300,22 @@ Usage example:
 .u-h1 {
   font-size: 36px !important;
   font-size: 2.25rem !important;
-  line-height: 1.33333 !important; }
+  line-height: 1.16667 !important; }
 
 .u-h2 {
   font-size: 28px !important;
   font-size: 1.75rem !important;
-  line-height: 1.71429 !important; }
+  line-height: 1.28571 !important; }
 
 .u-h3 {
   font-size: 24px !important;
   font-size: 1.5rem !important;
-  line-height: 1 !important; }
+  line-height: 1.25 !important; }
 
 .u-h4 {
   font-size: 20px !important;
   font-size: 1.25rem !important;
-  line-height: 1.2 !important; }
+  line-height: 1.5 !important; }
 
 .u-h5 {
   font-size: 18px !important;
@@ -1394,9 +1405,7 @@ Hide visually and from screen readers.
    */
   *,
   *:before,
-  *:after,
-  *:first-letter,
-  *:first-line {
+  *:after {
     background: transparent !important;
     color: #000 !important;
     /* [1] */
@@ -1410,7 +1419,7 @@ Hide visually and from screen readers.
   abbr[title]:after {
     content: " (" attr(title) ")"; }
   /**
-   * Don't show links that are fragment identifiers, or use the `javascript:`
+   * Don’t show links that are fragment identifiers, or use the `javascript:`
    * pseudo protocol.
    */
   a[href^="#"]:after,
@@ -1453,56 +1462,6 @@ Very crude, reset-like styles taken from the HTML5 Boilerplate:
 
 */
 /* ==========================================================================
-   #RESPONSIVE-SPACINGS
-   ========================================================================== */
-/**
- * Utility classes enhancing the normal spacing classes by adding responsiveness
- * to them. By default this brings us the following classes:
- *
- *   .u-margin-bottom-none@mobile {}
- *   .u-margin-bottom-none@tablet {}
- *   .u-margin-bottom-none@desktop {}
- *   .u-margin-bottom-none@wide {}
- *
- * But we can affect the classes that get generated by altering the appropriate
- * Sass maps below.
- */
-/* stylelint-disable max-nesting-depth */
-@media (min-width: 20em) {
-  .u-margin-bottom-none\@mobile {
-    margin-bottom: 0 !important; } }
-
-@media (min-width: 30em) {
-  .u-margin-bottom-none\@mobileLandscape {
-    margin-bottom: 0 !important; } }
-
-@media (min-width: 46.25em) {
-  .u-margin-bottom-none\@tablet {
-    margin-bottom: 0 !important; } }
-
-@media (min-width: 61.25em) {
-  .u-margin-bottom-none\@desktop {
-    margin-bottom: 0 !important; } }
-
-@media (min-width: 81.25em) {
-  .u-margin-bottom-none\@wide {
-    margin-bottom: 0 !important; } }
-
-/* stylelint-enable max-nesting-depth */
-/*
----
-name: Responsive-spacings
-utilities:
-  - Responsive-spacings
----
-
-Utility classes enhancing the normal spacing classes by adding responsiveness
-to them. By default this brings us the following classes:
-
-* `.u-margin-bottom-none@mobile`
-
-*/
-/* ==========================================================================
    #SPACINGS
    ========================================================================== */
 /**
@@ -1517,7 +1476,6 @@ to them. By default this brings us the following classes:
  *   .u-padding-horizontal {}
  *   .u-padding-vertical-small {}
  */
-/* stylelint-disable string-quotes */
 .u-padding {
   padding: 24px !important; }
 
@@ -1794,7 +1752,6 @@ to them. By default this brings us the following classes:
   margin-top: 0 !important;
   margin-bottom: 0 !important; }
 
-/* stylelint-enable string-quotes */
 /*
 ---
 name: Spacings
@@ -1828,6 +1785,90 @@ $direction (
 * `.u-padding-right-none {}`
 * `.u-padding-horizontal {}`
 * `.u-padding-vertical-small {}`
+
+*/
+/*
+* How to use:
+*
+* $inuit-responsive-spacing-directions: (
+*   null: null,
+*   "-bottom": "-bottom",
+* );
+*/
+/*
+* How to use:
+*
+* $inuit-responsive-spacing-properties: (
+*   "margin": "margin",
+* );
+*/
+/*
+* How to use:
+*
+* $inuit-responsive-spacing-sizes: (
+*   "-small": $inuit-global-spacing-unit-small,
+* );
+*/
+/* ==========================================================================
+   #RESPONSIVE-SPACINGS
+   ========================================================================== */
+/**
+ * Utility classes enhancing the normal spacing classes by adding responsiveness
+ * to them. By default, there are not responsive spacings defined. You can
+ * generate responsive spacings by adding entries to the following three Sass
+ * maps, e.g.:
+ *
+ *   $inuit-responsive-spacing-directions: (
+ *     null: null,
+ *     bottom: bottom,
+ *   );
+ *
+ *   $inuit-responsive-spacing-properties: (
+ *     "margin": "margin",
+ *   );
+ *
+ *   $inuit-responsive-spacing-sizes: (
+ *     "-small": $inuit-global-spacing-unit-small,
+ *   );
+ *
+ * This would bring us the following classes:
+ *
+ *   .u-margin-small@mobile {}
+ *   .u-margin-small@tablet {}
+ *   .u-margin-small@desktop {}
+ *   .u-margin-small@wide {}
+ *   .u-margin-bottom-small@mobile {}
+ *   .u-margin-bottom-small@tablet {}
+ *   .u-margin-bottom-small@desktop {}
+ *   .u-margin-bottom-small@wide {}
+ *
+ * You can change the generated CSS classes by further extending the Sass maps.
+ * If you want every ‘normal’ spacing (those from `utilities.spacings`) also as
+ * a responsive version, you can just mirror the ‘normal’ spacings:
+ *
+ *   $inuit-responsive-spacing-directions: $inuit-spacing-directions !default;
+ *
+ *   $inuit-responsive-spacing-properties: $inuit-spacing-properties !default;
+ *
+ *   $inuit-responsive-spacing-sizes: $inuit-spacing-sizes !default;
+ *
+ * BUT BE AWARE: This can generate a huge chunk of extra CSS, depending on the
+ * amount of breakpoints you defined. So please check your CSS’ output and
+ * filesize!
+ */
+/* stylelint-disable max-nesting-depth */
+/* stylelint-enable max-nesting-depth */
+/*
+---
+name: Responsive-spacings
+utilities:
+  - Responsive-spacings
+---
+
+Utility classes enhancing the normal spacing classes by adding responsiveness
+to them. By default this brings us the following classes:
+
+* `.u-margin-bottom-none@mobile`
 
 */
 /* ==========================================================================
