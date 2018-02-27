@@ -75,31 +75,31 @@
 <li><code>$and</code>: additional custom directives</li>
 </ul>
 <p>Note that <code>$until</code> as a keyword is a hard limit i.e. it&#39;s breakpoint - 1.</p>
-<pre><code class="language-scss"><span class="token selector">.responsive </span><span class="token punctuation">{</span>
+<pre><code class="language-scss"><span class="token selector" >.responsive </span><span class="token punctuation" >{</span>
   <span class="token comment" spellcheck="true">// Apply styling to mobile and upwards</span>
-  <span class="token keyword">@include</span> <span class="token function">mq</span><span class="token punctuation">(</span><span class="token property"><span class="token variable">$from</span></span><span class="token punctuation">:</span> mobile<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
+  <span class="token keyword" >@include</span> <span class="token function" >mq</span><span class="token punctuation" >(</span><span class="token variable" >$from</span><span class="token punctuation" >:</span> mobile<span class="token punctuation" >)</span> <span class="token punctuation" >{</span>
+    <span class="token property" >color</span><span class="token punctuation" >:</span> red<span class="token punctuation" >;</span>
+  <span class="token punctuation" >}</span>
   <span class="token comment" spellcheck="true">// Apply styling up to devices smaller than tablets (exclude tablets)</span>
-  <span class="token keyword">@include</span> <span class="token function">mq</span><span class="token punctuation">(</span><span class="token property"><span class="token variable">$until</span></span><span class="token punctuation">:</span> tablet<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
+  <span class="token keyword" >@include</span> <span class="token function" >mq</span><span class="token punctuation" >(</span><span class="token variable" >$until</span><span class="token punctuation" >:</span> tablet<span class="token punctuation" >)</span> <span class="token punctuation" >{</span>
+    <span class="token property" >color</span><span class="token punctuation" >:</span> blue<span class="token punctuation" >;</span>
+  <span class="token punctuation" >}</span>
   <span class="token comment" spellcheck="true">// Same thing, in landscape orientation</span>
-  <span class="token keyword">@include</span> <span class="token function">mq</span><span class="token punctuation">(</span><span class="token property"><span class="token variable">$until</span></span><span class="token punctuation">:</span> tablet, <span class="token property"><span class="token variable">$and</span></span><span class="token punctuation">:</span> <span class="token string">'(orientation: landscape)'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token property">color</span><span class="token punctuation">:</span> hotpink<span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
+  <span class="token keyword" >@include</span> <span class="token function" >mq</span><span class="token punctuation" >(</span><span class="token variable" >$until</span><span class="token punctuation" >:</span> tablet, <span class="token variable" >$and</span><span class="token punctuation" >:</span> <span class="token string" >'(orientation: landscape)'</span><span class="token punctuation" >)</span> <span class="token punctuation" >{</span>
+    <span class="token property" >color</span><span class="token punctuation" >:</span> hotpink<span class="token punctuation" >;</span>
+  <span class="token punctuation" >}</span>
   <span class="token comment" spellcheck="true">// Apply styling to tablets up to desktop (exclude desktop)</span>
-  <span class="token keyword">@include</span> <span class="token function">mq</span><span class="token punctuation">(</span>tablet, desktop<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token property">color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
+  <span class="token keyword" >@include</span> <span class="token function" >mq</span><span class="token punctuation" >(</span>tablet, desktop<span class="token punctuation" >)</span> <span class="token punctuation" >{</span>
+    <span class="token property" >color</span><span class="token punctuation" >:</span> green<span class="token punctuation" >;</span>
+  <span class="token punctuation" >}</span>
+<span class="token punctuation" >}</span>
 </code></pre>
 <p>For the complete &#39;how to use&#39;: <a href="https://github.com/sass-mq/sass-mq" title="null">https://github.com/sass-mq/sass-mq</a></p>
 
       </div>
 </div>
 
-        <footer class="aigis-footer">Last update at 13:28, 27-02-2018</footer>
+        <footer class="aigis-footer">Last update at 14:26, 27-02-2018</footer>
       </div>
     </div>
   </div>
