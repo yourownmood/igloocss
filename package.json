@@ -1,6 +1,6 @@
 {
   "name": "igloocss",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Extensible, scalable, Sass-based, OOCS framework which houses inuit.css",
   "main": "main.scss",
   "scripts": {
@@ -9,6 +9,7 @@
     "parker": "./node_modules/.bin/parker dist/igloocss/main-min.css --format=json | tee dist/igloocss/main-stats.json",
     "postinstall": "yarn build",
     "prepush": "yarn test",
+    "precommit": "yarn stylelint; yarn standard;",
     "sass": "./node_modules/.bin/node-sass igloocss/main.scss dist/igloocss/main.css",
     "styleguide": "./node_modules/.bin/aigis run -c ./aigis_config.yml",
     "stylelint": "stylelint 'igloocss/**/*.{scss}', 'docs/**/*.{scss,css}' --syntax scss --config .stylelintrc",
@@ -20,30 +21,27 @@
     "sass",
     "bem",
     "css",
+    "inuitcss",
     "itcss"
   ],
-  "pre-push": {
-    "silent": false
-  },
   "author": "Steven Bax (yourownmood)",
   "homepage": "http://igloocss.com",
   "license": "ISC",
   "dependencies": {
-    "clean-css": "^3.4.21",
-    "express": "^4.15.2",
+    "clean-css-cli": "^4.1.10",
+    "express": "^4.16.2",
     "inuitcss": "^6.0.0",
-    "node-aigis": "^1.2.1",
-    "node-sass": "^3.13.0",
+    "node-aigis": "^1.4.1",
+    "node-sass": "^4.7.2",
     "parker": "0.0.10",
-    "pre-push": "^0.1.1",
-    "sass-mq": "^3.3.1",
-    "stylelint": "8.0.0",
-    "stylelint-order": "0.6.0"
+    "sass-mq": "^4.0.2",
+    "stylelint": "9.1.1",
+    "stylelint-order": "0.8.1"
   },
   "devDependencies": {
-    "husky": "^0.13.3",
-    "mocha": "^3.5.0",
+    "husky": "^0.14.3",
+    "mocha": "^5.0.1",
     "sassaby": "^2.1.1",
-    "standard": "^10.0.2"
+    "standard": "^11.0.0"
   }
 }
