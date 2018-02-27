@@ -1,5 +1,5 @@
 # igloocss
-[![CircleCI](https://circleci.com/gh/yourownmood/igloocss/tree/master.svg?style=shield)](https://circleci.com/gh/yourownmood/igloocss/tree/master)
+[![CircleCI](https://circleci.com/gh/yourownmood/igloocss/tree/master.svg?style=shield)](https://circleci.com/gh/yourownmood/igloocss/tree/master) [![Dependency Status](https://david-dm.org/yourownmood/igloocss.svg)](https://david-dm.org/yourownmood/igloocss) [![devDependency Status](https://david-dm.org/yourownmood/igloocss/dev-status.svg)](https://david-dm.org/yourownmood/igloocss#info=devDependencies)
 
 [igloocss.com](http://igloocss.com "igloocss website")
 
